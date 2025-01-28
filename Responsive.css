@@ -1,0 +1,236 @@
+@media (max-width: 480px) {
+  /* Adjustments for small screen sizes */
+  .purple-section h1 {
+    font-size: 1.25rem;
+  }
+
+  .purple-section p {
+    font-size: 0.9rem;
+  }
+
+  .purple-section .form-control {
+    padding: 8px 15px;
+  }
+
+  .purple-section .btn {
+    padding: 6px 12px;
+  }
+
+  .decorative-circle.large {
+    width: 20px;
+    height: 20px;
+  }
+
+  .decorative-circle.small {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for medium-sized screens like tablets */
+  .logos div {
+    flex: 0 0 100%;
+  }
+
+  .info-box {
+    margin-top: 20px;
+  }
+
+  .info-box h1 {
+    font-size: 80px;
+  }
+
+  .info-box p {
+    font-size: 0.9rem;
+  }
+
+  /* Service section adjustment for better mobile view */
+  .service-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Center filter buttons */
+  #filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-12 h1,h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Testimonial section styling */
+  .testimonial-row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .testimonial-card {
+    width: 45%;
+    height: auto;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-content {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-author {
+    font-size: 1rem;
+  }
+
+  .testimonial-role {
+    font-size: 0.8rem;
+  }
+
+  /* Purple section adjustments */
+  .purple-section {
+    height: auto;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+    top: 200px;
+  }
+
+  .purple-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .purple-section p {
+    font-size: 1rem;
+  }
+
+  .purple-section .form-control {
+    width: 190px;
+  }
+
+  .purple-section .btn {
+    padding: 8px 16px;
+  }
+
+  .decorative-circle.large {
+    width: 25px;
+    height: 25px;
+  }
+
+  .decorative-circle.small {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* About section font size adjustment */
+  .about-box h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Navbar styling for medium-sized screens */
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar {
+    background-color: black;
+    color: white;
+  }
+
+  .navbar a.nav-link,
+  .navbar-toggler {
+    color: white;
+  }
+
+  .navbar-toggler i {
+    color: white;
+  }
+
+  /* Header button styling */
+  .header-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  /* Header section adjustments */
+  .header {
+    padding: 30px 15px;
+    min-height: 70vh;
+  }
+
+  .header-text {
+    max-width: 100%;
+    text-align: start;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .header-text h3::after {
+    display: none;
+  }
+
+  /* Section 2 adjustments for smaller screens */
+  .sec-2 {
+    padding: 0px 0px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+  }
+
+  .sec-2 h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .sec-2 p {
+    font-size: 18px;
+    color: rgb(39, 38, 38);
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Header text adjustments for large screens */
+  .header-text h3::after {
+    width: 200px;
+    left: 35%;
+  }
+
+  .info-box h1 {
+    font-size: 80px;
+  }
+
+  #para {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  /* Header text adjustments for extra-large screens */
+  .header-text h3::after {
+    width: 300px;
+    left: 35%;
+  }
+
+  .info-box h1 {
+    font-size: 70px;
+  }
+
+  #para {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,726 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #727272;
+  background-image: url(Images/body-bg.png.webp);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position-x: center;
+  background-position-y: center;
+  overflow-x: hidden;
+}
+
+/* Fixed header positioning */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar brand text styling */
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #291fee, #a323e7);
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+/* Navbar brand hover effect */
+.navbar-brand:hover {
+  background: linear-gradient(270deg, #ab3ce7, #433aed);
+  background-clip: text;
+  color: transparent;
+}
+
+/* Navbar brand decoration after hover effect */
+.navbar-brand::after {
+  content: " ";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #71349dae;
+  bottom: 45px;
+  left: 115px;
+}
+
+/* Menu icon animation */
+.menu-icon {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.menu-icon.hide {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+/* Close icon animation */
+.close-icon {
+  opacity: 0;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease;
+}
+
+.close-icon.show {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* Navbar icon hover effect */
+.navbar-toggler i {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-toggler i:hover {
+  transform: scale(1.1);
+  color: #6f42c1;
+}
+
+/* Styling for navbar navigation links */
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+/* Navbar link hover effect */
+.nav-link:hover {
+  color: #6f42c1;
+}
+
+/* Underline effect for navbar links */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #6f42c1;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Active state for navbar link */
+.nav-link.active {
+  color: #6f42c1;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+/* Background styling for header section */
+.bg-1 {
+  background-image: url("Images/WhatsApp\ Image\ 2025-01-24\ at\ 4.04.04\ PM.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header text styling */
+.header-text {
+  max-width: 50%;
+}
+
+.header-text h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+}
+
+/* Underline effect for h3 header text */
+.header-text h3::after {
+  content: "";
+  width: 400px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  background: #000;
+}
+
+/* Large header text (h1) styling */
+.header-text h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+/* Subheading text styling */
+.header-text h2 {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* Button styling for header */
+.header-buttons button {
+  height: 50px;
+  width: 150px;
+  margin: 10px;
+}
+
+/* Primary button styling */
+.btn-primary {
+  background: linear-gradient(136deg, #574ff9, #8a63ff);
+  border: none;
+  font-weight: 600;
+}
+
+/* Hover effect for primary button */
+.btn-primary:hover {
+  color: #000;
+  background: linear-gradient(90deg, #f1f1f2, #f0f0f2);
+}
+
+.btn-primary a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-primary a:hover {
+  color: black;
+}
+
+/* Outline button styling */
+.btn-outline-light {
+  border: 1px solid #574ff9;
+  background-color: #f0f0f2;
+  color: #000;
+  font-weight: 600;
+}
+
+.btn-outline-light a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-outline-light a:hover {
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background: linear-gradient(136deg, #574ff9, #8a63ff);
+  color: white;
+  border: none;
+}
+
+/* Image styling for header image */
+.header-image img {
+  max-width: 100%;
+  height: 600px;
+}
+
+/* Logo grid layout */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Individual logo styling */
+.logo {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  max-height: 40px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Section 2 header styling */
+.sec-2 h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Section 3 logo styling */
+.logos div {
+  width: 30%;
+  height: 100px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logos div img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Hover effect for logos */
+.logos div:hover {
+  border: none;
+  box-shadow: 0 2px 4px rgba(93, 35, 218, 0.329);
+  transition-duration: 0.5s;
+  filter: brightness(0%);
+}
+
+/* Info box styling */
+.info-box {
+  height: 330px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(93, 35, 218, 0.1);
+}
+
+/* Heading styling inside info box */
+.info-box h1 {
+  font-size: 110px;
+  color: #6f42c1;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Paragraph styling inside info box */
+#para {
+  font-size: 30px;
+}
+
+/* Link styling inside info box */
+.info-box a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+/* Phone number section inside info box */
+.info-box .phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.info-box .phone p {
+  margin: 0;
+}
+
+.info-box .phone-icon {
+  font-size: 50px;
+}
+
+/* Section 4 card styling */
+.sec-4 {
+  padding: 100px 0;
+}
+
+.card {
+  border: none;
+  background-color: #fff;
+  color: #6c757d;
+  border-radius: none;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+}
+
+.card-title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+
+/* Service section layout */
+.service-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Section 5 project image hover styling */
+.sec-5 {
+  padding: 200px 0;
+}
+
+#filter-buttons button {
+  background-color: #682ddd;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+#filter-buttons button:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.653);
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.project .plus-icon {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 100px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease, top 0.3s ease;
+}
+
+
+.project:hover .plus-icon {
+  opacity: 1;
+  top: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#512be7ba;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  transition: top 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.image-wrapper:hover .overlay {
+  top: 0;
+  /* Slide down */
+  opacity: 1;
+}
+
+/* Section 6 testimonial card styling */
+.sec-6 {
+  padding-top: 100px;
+}
+
+.testimonial-card {
+  box-shadow: 0 0px 10px rgba(252, 252, 252, 0.986);
+  border-radius: 15px;
+  padding: 20px;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Section 7 purple section styling */
+.purple-section {
+  background: linear-gradient(135deg, #6a0dad, #8e44ad);
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 250px;
+}
+
+/* Purple section text styling */
+.purple-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.purple-section p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+/* Input fields in purple section */
+.purple-section .form-control {
+  width: 500px;
+  margin: 30px 0;
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 249, 249);
+  background: none;
+  color: white;
+}
+
+.purple-section .form-control::placeholder {
+  color: white;
+}
+
+/* Button styling in purple section */
+.purple-section .btn {
+  padding: 10px 20px;
+}
+
+/* Decorative circle styles */
+.decorative-circle {
+  border-radius: 50%;
+  background: white;
+}
+
+.decorative-circle.small {
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+}
+
+.decorative-circle.large {
+  width: 30px;
+  height: 30px;
+  margin: 20px auto;
+}
+
+/* Section 8 footer styling */
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  height: 700px;
+}
+
+.social-icons a {
+  padding: 0 20px;
+  color: #131313;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #502be7;
+}
+
+/* Copyright section */
+.copyright {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.copyright a {
+  color: #3d18cf;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+/* About section styling */
+.sec-2,
+.sec-3,
+.sec-4 {
+  padding-top: 200px;
+}
+
+.about-section {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: white;
+  height: 55vh;
+  width: 60%;
+}
+
+.about-box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Breadcrumb styling */
+.breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "-";
+  color: white;
+  font-weight: 700;
+}
+
+/* Contact page footer */
+#footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  height: 400px;
+}
+
+/* Contact page styling */
+.contact-section {
+  padding-top: 200px;
+}
+
+/* Contact form styling */
+.contact-info i {
+  color: #6c63ff;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: linear-gradient(136deg, #574ff9, #8a63ff);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  color: white;
+  background: linear-gradient(136deg, #7066f4, #5a31d6);
+}
+
+/* Map container styling */
+.map-container iframe {
+  background-color: #e0e0e0;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #666;
+}

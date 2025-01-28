@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Responsive.css" />
+</head>
+
+<body>
+  <!---------------------------------------------- Navigation  ------------------------------------------------>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="Index.html">DHRUV</a>
+        <!-- Navbar toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-2xl" id="menu-icon"></i>
+          <i class="fa-solid fa-xmark fa-2xl d-none" id="close-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" onclick="setActive(0)" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="setActive(1)" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="setActive(2)" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="setActive(3)" href="Portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" onclick="setActive(4)" href="#">Pages</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="setActive(5)" href="#">Blogs</a></li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="setActive(6)" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!---------------------------------------------- Section-1  ------------------------------------------------>
+  <div class="container about-section d-flex justify-content-center align-items-center mt-5">
+    <div class="container text-center">
+      <div class="about-box">
+        <h1>PORTFOLIO</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center mt-4">
+            <li class="breadcrumb-item fs-5">
+              <a href="Index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active fs-5" aria-current="page">
+              Portfolio
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------- Section-5 ------------------------------------------------>
+  <div class="container sec-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-black mb-4 fw-bold">QUALITY WORK</h1>
+        <h2 class="text-black mb-5 fw-bold">RECENTLY DONE PROJECT</h2>
+        <div class="mb-4 flex-wrap gap-2 gap-md-3 gap-lg-4" id="filter-buttons">
+          <!-- Filter buttons for project categories -->
+          <button class="btn me-2 active" onclick="filterProjects('all')">ALL</button>
+          <button class="btn me-2" onclick="filterProjects('html-css')">HTML/CSS</button>
+          <button class="btn me-2" onclick="filterProjects('jquery')">JQUERY</button>
+          <button class="btn me-2" onclick="filterProjects('bootstrap')">BOOTSTRAP-5</button>
+          <button class="btn me-2" onclick="filterProjects('javascript')">JAVASCRIPT</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- HTML/CSS Projects -->
+      <div class="col-md-4 mt-5 project html-css" data-id="1">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Bounce-Up.png" alt="Minimal Design" class="img-fluid rounded" />
+
+          <a href="https://bounce-up.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">BOUNCE-UP-CLONE</h3>
+      </div>
+      <div class="col-md-4 mt-5 project html-css" data-id="2">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Italian-food.png" alt="Modern Architecture" class="img-fluid rounded" />
+
+          <a href="https://project-1-psd-7hm8.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">ITALIAN-FOOD</h3>
+      </div>
+      <div class="col-md-4 mt-5 project html-css" data-id="3">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Pet-Care.png" alt="Pet Care" class="img-fluid rounded" />
+
+          <a href="https://pet-care-rust.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">PET CARE</h3>
+      </div>
+
+      <!-- jQuery Projects -->
+      <div class="col-md-4 mt-5 project jquery" data-id="4">
+        <div class="project-container image-wrapper">
+          <a href="#" target="_blank">
+            <img src="Images/Admin-Panel.png" alt="Creative Branding" class="img-fluid rounded" />
+          </a>
+          <div class="overlay">+</div>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">ADMIN PANEL</h3>
+      </div>
+
+      <!-- Bootstrap Projects -->
+      <div class="col-md-4 mt-5 project bootstrap" data-id="5">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Invincible.png" alt="Admin Panel" class="img-fluid rounded" />
+
+          <a href="https://invincible-clone-bgnr.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0 text-uppercase">Invincible Clone</h3>
+      </div>
+
+      <div class="col-md-4 mt-5 project bootstrap" data-id="6">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Looper-Tech.png" alt="Italian Food" class="img-fluid rounded" />
+
+          <a href="https://looper-tech.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">LOOPER TECH</h3>
+      </div>
+      <div class="col-md-4 mt-5 project bootstrap" data-id="7">
+        <div class="project-container image-wrapper">
+          <a href="#" target="_blank">
+            <img src="Images/Reliance.png" alt="Reliance" class="img-fluid rounded" />
+          </a>
+          <div class="overlay">+</div>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">
+          RELIANCE-FOUNDATION-CLONE
+        </h3>
+      </div>
+
+      <!-- JavaScript Projects -->
+      <div class="col-md-4 mt-5 project javascript" data-id="8">
+        <div class="project-container image-wrapper">
+          <img src="Images/REG-LOG.png" alt="Looper Tech" class="img-fluid rounded " />
+          <a href="https://register-login-ochre.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">REGISTER-LOGIN PAGE</h3>
+      </div>
+      <div class="col-md-4 mt-5 project javascript" data-id="9">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Gread_Sys.png" alt="Looper Tech" class="img-fluid rounded" />
+
+          <a href="https://register-login-ochre.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">GREAD SYSTEM</h3>
+      </div>
+      <div class="col-md-4 mt-5 project javascript" data-id="10">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Bill-Invoice.png" alt="Bill-Invoice" class="img-fluid rounded" />
+
+          <a href="https://bill-invoice-r1vn.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">BILL-INVOICE</h3>
+      </div>
+      <div class="col-md-4 mt-5 project javascript" data-id="11">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Driving-Licence.png" alt="driving-licence" class="img-fluid rounded" />
+
+          <a href="https://driving-licence-mocha.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0">DRIVING-LICENCE</h3>
+      </div>
+      <div class="col-md-4 mt-5 project javascript" data-id="12">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/RPS.png" alt="rock-paper-scissor" class="img-fluid rounded" />
+
+          <a href="https://rock-paper-scissor-one-sooty.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0 text-uppercase">rock-paper-scissor</h3>
+      </div>
+      <div class="col-md-4 mt-5 project javascript" data-id="13">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Search-Bar.png" alt="search-bar" class="img-fluid rounded" />
+
+          <a href="https://search-bar-fawn-ten.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0 text-uppercase">search-bar</h3>
+      </div>
+      <div class="col-md-4 mt-5 project javascript" data-id="14">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Tic-Tac-Toi.png" alt="tic-tac-toi" class="img-fluid rounded" />
+
+          <a href="https://tic-tac-toi-js.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0 text-uppercase">tic-tac-toi</h3>
+      </div>
+      <div class="col-md-4 mt-5 project javascript" data-id="15">
+        <div class="project-container image-wrapper">
+
+          <img src="Images/Slider.png" alt="slider" class="img-fluid rounded" />
+
+          <a href="https://slider-xi-black.vercel.app/" target="_blank">
+            <div class="overlay">+</div>
+          </a>
+        </div>
+        <h3 class="text-black text-center mt-3 mb-0 text-uppercase">slider</h3>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------- Section-7 ------------------------------------------------>
+  <div class="container purple-section sec-6 pb-5">
+    <div class="decorative-circle large"></div>
+    <div class="decorative-circle small"></div>
+    <h1>GET UPDATE FROM ANYWHERE</h1>
+    <p>Bearing Void gathering light light his evening unto don't afraid.</p>
+    <div class="d-flex justify-content-center align-items-center">
+      <!-- Email subscription input -->
+      <input type="email" class="form-control me-2" placeholder="Email address" />
+      <button class="btn btn-light">GET STARTED</button>
+    </div>
+    <div class="icon">
+      <i class="bi bi-lightbulb"></i>
+    </div>
+  </div>
+
+  <!---------------------------------------------- Section-8 ------------------------------------------------>
+  <footer class="footer pb-5 pt-5 d-flex justify-content-end align-items-center flex-column">
+    <a class="navbar-brand" href="Index.html">DHRUV</a>
+    <p class="mt-4 fs-5 text-black fw-bold">FOLLOW ME</p>
+    <div class="social-icons d-flex justify-content-center mt-4">
+      <!-- Social media icons -->
+      <a href="https://www.facebook.com/" class="mx-2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/" class="mx-2" aria-label="Instagram"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/Dhruv-198" class="mx-2" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/patel-dhruv-7a23b3216/" class="mx-2" aria-label="LinkedIn"><i
+          class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="copyright mt-4">
+      <p>Copyright &copy;2025 All rights reserved | This template is made with <span
+          style="color: #e25555">&hearts;</span> by <a href="https://colorlib.com" target="_blank">Dhruv</a></p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

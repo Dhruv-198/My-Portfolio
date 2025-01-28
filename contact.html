@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conatct-Us</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Responsive.css" />
+</head>
+
+<body>
+  <!---------------------------------------------- Navigation  ------------------------------------------------>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="Index.html">DHRUV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-2xl" id="menu-icon"></i>
+          <i class="fa-solid fa-xmark fa-2xl d-none" id="close-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" onclick="setActive(0)" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="setActive(1)" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="setActive(2)" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="setActive(3)" href="Portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" onclick="setActive(4)" href="#">Pages</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="setActive(5)" href="#">Blogs</a></li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="setActive(6)" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!---------------------------------------------- Section-1  ------------------------------------------------>
+
+  <div class="container about-section d-flex justify-content-center align-items-center mt-5">
+    <div class="container text-center">
+      <div class="about-box">
+        <h1>CONTACT US</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center mt-4">
+            <li class="breadcrumb-item fs-5">
+              <a href="Index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active fs-5" aria-current="page">
+              Contact
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------- Contact ------------------------------------------------>
+  <div class="container contact-section">
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="contact-info">
+          <div class="d-flex justify-content-start align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+              <g fill="none" stroke="#6c63ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path stroke-dasharray="16" stroke-dashoffset="16" d="M4.5 21.5h15">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="16;0" />
+                </path>
+                <path stroke-dasharray="16" stroke-dashoffset="16" d="M4.5 21.5v-13.5M19.5 21.5v-13.5">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="16;0" />
+                </path>
+                <path stroke-dasharray="28" stroke-dashoffset="28" d="M2 10l10 -8l10 8">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.4s" values="28;0" />
+                </path>
+                <path stroke-dasharray="24" stroke-dashoffset="24" d="M9.5 21.5v-9h5v9">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.4s" values="24;0" />
+                </path>
+              </g>
+            </svg>
+            <div class="ps-2">
+              <div class="fs-5 fw-bold">California, United States</div>
+              <div>Santa monica bullevard</div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-start align-items-center pt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 16 16">
+              <g fill="#6c63ff">
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608a17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42a18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                <path fill-rule="evenodd"
+                  d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5" />
+              </g>
+            </svg>
+            <div class="ps-2">
+              <div class="fs-5 fw-bold">00 (440) 9865 562</div>
+              <div>Mon to Fri 9am to 6 pm</div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-start align-items-center pt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
+              <path fill="#6c63ff"
+                d="M8.768 4.75h6.464c.813 0 1.469 0 2 .043c.546.045 1.026.14 1.47.366a3.75 3.75 0 0 1 1.64 1.639c.226.444.32.924.365 1.47c.043.531.043 1.187.043 2v3.464c0 .813 0 1.469-.043 2c-.045.546-.14 1.026-.366 1.47a3.75 3.75 0 0 1-1.639 1.64c-.444.226-.924.32-1.47.365c-.531.043-1.187.043-2 .043H8.768c-.813 0-1.469 0-2-.043c-.546-.045-1.026-.14-1.47-.366a3.75 3.75 0 0 1-1.64-1.639c-.226-.444-.32-.924-.365-1.47c-.043-.531-.043-1.187-.043-2v-3.464c0-.813 0-1.469.043-2c.045-.546.14-1.026.366-1.47a3.75 3.75 0 0 1 1.639-1.64c.444-.226.924-.32 1.47-.365c.531-.043 1.187-.043 2-.043M6.89 6.288c-.454.037-.715.107-.912.207c-.3.153-.56.37-.763.633l5.18 4.489c.38.33.633.549.843.704c.202.15.318.205.409.232c.23.067.474.067.704 0c.09-.027.207-.082.409-.232c.21-.155.463-.375.844-.704l5.179-4.489a2.25 2.25 0 0 0-.762-.633c-.198-.1-.459-.17-.913-.207c-.462-.037-1.057-.038-1.909-.038H8.8c-.852 0-1.447 0-1.91.038M4.75 10.3v3.4c0 .853 0 1.447.038 1.91c.037.453.107.714.207.912q.07.137.159.264L7.97 13.97a.75.75 0 0 1 1.06 1.06l-2.617 2.618q.195.04.478.064c.462.037 1.057.038 1.909.038h6.4c.852 0 1.447 0 1.91-.038a4 4 0 0 0 .478-.064L14.97 15.03a.75.75 0 1 1 1.06-1.06l2.816 2.816q.088-.127.159-.265c.1-.197.17-.458.207-.912c.037-.462.038-1.056.038-1.909v-3.4c0-.66 0-1.166-.018-1.575l-4.666 4.044c-.354.306-.65.564-.912.757c-.274.203-.552.37-.88.466a2.75 2.75 0 0 1-1.549 0c-.327-.096-.605-.263-.88-.466a17 17 0 0 1-.91-.757L4.767 8.725c-.018.41-.018.915-.018 1.575" />
+            </svg>
+            <div class="ps-2">
+              <div class="fs-5 fw-bold">xyz1908@gmail.com</div>
+              <div>Send us your query anytime!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-4 pe-5">
+        <div class="contact-form">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Enter email address" required />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Enter Subject" required />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="contact-form">
+          <form>
+            <div class="mb-3">
+              <textarea class="form-control" rows="6" placeholder="Enter Message" required></textarea>
+            </div>
+            <button type="submit" class="btn  w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="row mt-4 mt-5">
+      <div class="col-12">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7599648205096!2d72.92017027507701!3d22.550662779507334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa590cb23c3494531%3A0xbae5caca8e2dc986!2sRed%20and%20White%20Skill%20Education%20-%20Vidyanagar!5e0!3m2!1sen!2sin!4v1737886381174!5m2!1sen!2sin"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------- Section-8 ------------------------------------------------>
+
+  <footer class="footer pb-5  d-flex justify-content-end align-items-center flex-column" id="footer">
+    <a class="navbar-brand" href="Index.html">DHRUV</a>
+    <p class="mt-4 fs-5 text-black fw-bold">FOLLOW ME</p>
+    <div class="social-icons d-flex justify-content-center mt-4">
+      <a href="https://www.facebook.com/" class="mx-2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/" class="mx-2" aria-label="Instagram"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/Dhruv-198" class="mx-2" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/patel-dhruv-7a23b3216/" class="mx-2" aria-label="LinkedIn"><i
+          class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="copyright mt-4">
+      <p>
+        Copyright &copy;2025 All rights reserved | This template is made with
+        <span style="color: #e25555">&hearts;</span> by
+        <a href="https://colorlib.com" target="_blank">Dhruv</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
