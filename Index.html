@@ -33,30 +33,24 @@
       <div class="container">
         <a class="navbar-brand" href="Index.html">DHRUV</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars fa-2xl" id="menu-icon"></i>
-          <i class="fa-solid fa-xmark fa-2xl" id="close-icon" style="display: none;"></i>
+          <i class="fa-solid fa-xmark fa-2xl d-none" id="close-icon"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="Index.html" class="nav-link active" onclick="setActive(this)">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link" onclick="setActive(this)">About</a></li>
             <li class="nav-item">
-              <a class="nav-link active" onclick="setActive(0)" href="Index.html">Home</a>
+              <a href="service.html" class="nav-link" onclick="setActive(this)">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="setActive(1)" href="about.html">About</a>
+              <a href="Portfolio.html" class="nav-link" onclick="setActive(this)">Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(2)" href="service.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(3)" href="Portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" onclick="setActive(4)" href="#">Pages</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="setActive(5)" href="#">Blogs</a></li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(6)" href="contact.html">Contact</a>
-            </li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="setActive(this)">Pages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="setActive(this)">Blogs</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link" onclick="setActive(this)">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -71,9 +65,10 @@
         <h1>I am Dhruv Patel</h1>
         <h2>Front End Developer</h2>
         <div class="header-buttons">
-          <button class="btn btn-primary"><a href="contact.html">Hire Me</a></button>
-          <button class="btn btn-outline-light"><a href="Dhruv_Patel_Resume (1).pdf" target="_blank">Get
-              Resume</a></button>
+          <a href="contact.html"><button class="btn btn-primary">Hire Me</button></a>
+          <a href="Dhruv_Patel_Resume (1).pdf" target="_blank"><button class="btn btn-outline-light">Get
+              Resume</button>
+          </a>
         </div>
       </div>
       <div class="header-image ps-5">
@@ -93,19 +88,21 @@
         <h1>Introduce about</h1>
         <h1>myself</h1>
 
-        <p class="w-75 mt-3">
-          Whose given. Were gathered. There first subdue greater. Bearing you
-          Whales heaven midst their. Beast creepeth. Fish days.
+        <p class=" mt-3 fs-5">
+          I am a passionate <span class="fw-bold"> Front-End Developer </span> skilled in <span class="fw-bold"> HTML,
+            CSS, jQuery, Bootstrap, DSA With C++ and JavaScript,</span> focused on building responsive and user-friendly
+          websites. With a keen eye for design, I create visually appealing and high-performance interfaces.
         </p>
-        <p class="mt-3 w-75">
-          Is give may shall likeness made yielding spirit a itself together
-          created after sea is in beast beginning signs open god you're
-          gathering whose gathered cattle let. Creature whales fruit unto meat
-          the life beginning all in under give two.
+        <p class="mt-3 fs-5">
+          I follow best UI practices to ensure seamless user experiences. Staying updated with the latest web
+          technologies, I optimize code for performance and accessibility. I collaborate closely with designers and
+          back-end developers to deliver efficient solutions. Clean coding and problem-solving are at the core of my
+          approach, aiming to build innovative and engaging web experiences.
         </p>
-        <div class="header-buttons">
-          <button class="btn btn-primary text-uppercase w-50"> <a href="Dhruv_Patel_Resume (1).pdf"
-              target="_blank">Download Resume</a></button>
+        <div id="about-buttons" class="mt-4">
+          <a href="Dhruv_Patel_Resume (1).pdf" target="_blank"><button class="btn  text-uppercase w-50">
+              Download Resume</button>
+          </a>
         </div>
       </div>
     </div>
@@ -149,8 +146,8 @@
       <div class="col-lg-4 col-12 mt-4 mt-lg-0 ps-xl-5 ps-lg-5 ps-md-0 ps-sm-0">
         <div class="info-box d-flex justify-content-evenly align-items-start flex-column">
           <div class="d-flex align-items-center">
-            <h1>10</h1>
-            <p class="w-25 text-start ps-sm-1  ps-md-1 ps-lg-3 ps-xl-5  fw-bold" id="para">
+            <h1>1</h1>
+            <p class="w-25 text-start ps-xs-5 ps-sm-5 ps-md-5 ps-lg-5 ps-xl-5  fw-bold" id="para">
               Years Experience Working
             </p>
           </div>
@@ -176,10 +173,9 @@
       SERVICE OFFERS
     </h1>
     <div class="w-100 d-flex justify-content-center align-items-center text-center">
-      <p class="w-50 fs-5">
-        Is give may shall likeness made yielding spirit a itself togeth
-        created after sea is in beast beginning signs open god you're
-        gathering ithe
+      <p class="fs-5 service-para">
+        I offer a range of web development, design, and SEO optimization services tailored to elevate your digital
+        presence. Let's work together to create innovative and impactful solutions for your projects.
       </p>
     </div>
     <div class="service-section mt-5">
@@ -189,8 +185,8 @@
         <div class="card-body">
           <h5 class="card-title">Web developing</h5>
           <p class="card-text pt-3 pb-3">
-            Creeping for female light years that lesser can't evening heaven
-            isn't bearing tree.
+            "Experienced in front-end and back-end web development, proficient in HTML, CSS, JavaScript, and modern
+            frameworks."
           </p>
         </div>
       </div>
@@ -199,8 +195,8 @@
         <div class="card-body">
           <h5 class="card-title">UI/UX Design</h5>
           <p class="card-text pt-3 pb-3">
-            Creeping for female light years that lesser can't evening heaven
-            isn't bearing tree
+            "Experienced in UI/UX design, crafting intuitive and visually engaging user interfaces with a focus on
+            user-centered design principles."
           </p>
         </div>
       </div>
@@ -209,8 +205,8 @@
         <div class="card-body">
           <h5 class="card-title">Web Design</h5>
           <p class="card-text pt-3 pb-3">
-            Creeping for female light years that lesser can't evening heaven
-            isn't bearing tree
+            "Skilled in web design, creating visually appealing and user-friendly interfaces with UI/UX principles and
+            modern design tools."
           </p>
         </div>
       </div>
@@ -219,8 +215,8 @@
         <div class="card-body">
           <h5 class="card-title">SEO Optimize</h5>
           <p class="card-text pt-3 pb-3">
-            Creeping for female light years that lesser can't evening heaven
-            isn't bearing tree
+            "Proficient in SEO optimization, enhancing website visibility and driving organic traffic through on-page,
+            off-page, and technical strategies."
           </p>
         </div>
       </div>
@@ -285,7 +281,9 @@
           <a href="#" target="_blank">
             <img src="Images/Admin-Panel.png" alt="Creative Branding" class="img-fluid rounded" />
           </a>
-          <div class="overlay">+</div>
+          <a href="https://github.com/Dhruv-198/Admin-Panel.git" target="_blank">
+            <div class="overlay">+</div>
+          </a>
         </div>
         <h3 class="text-black text-center mt-3 mb-0">ADMIN PANEL</h3>
       </div>
@@ -316,10 +314,10 @@
       </div>
       <div class="col-md-4 mt-5 project bootstrap" data-id="7">
         <div class="project-container image-wrapper">
-          <a href="#" target="_blank">
-            <img src="Images/Reliance.png" alt="Reliance" class="img-fluid rounded" />
+          <img src="Images/Reliance.png" alt="Reliance" class="img-fluid rounded" />
+          <a href="https://github.com/Dhruv-198/Reliance-Clone.git" target="_blank">
+            <div class="overlay">+</div>
           </a>
-          <div class="overlay">+</div>
         </div>
         <h3 class="text-black text-center mt-3 mb-0">
           RELIANCE-FOUNDATION-CLONE
@@ -341,7 +339,7 @@
 
           <img src="Images/Gread_Sys.png" alt="Looper Tech" class="img-fluid rounded" />
 
-          <a href="https://register-login-ochre.vercel.app/" target="_blank">
+          <a href="https://github.com/Dhruv-198/Gread-System.git" target="_blank">
             <div class="overlay">+</div>
           </a>
         </div>
@@ -423,9 +421,8 @@
     </h1>
     <div class="w-100 d-flex justify-content-center align-items-center text-center">
       <p class="w-50 fs-5">
-        Is give may shall likeness made yielding spirit a itself togeth
-        created after sea is in beast beginning signs open god you're
-        gathering ithe
+        Clients have praised my dedication to delivering high-quality, user-centric web solutions. They appreciate my
+        attention to detail and ability to bring their visions to life.
       </p>
     </div>
     <div class="container sec-6 pb-5">
@@ -436,13 +433,13 @@
           <div class="carousel-item active">
             <div class="d-flex testimonial-row justify-content-center gap-4">
               <div class="testimonial-card col-md-5">
-                <img src="Images/testi-1.png" alt="John Doe" class="testimonial-img" />
+                <img src="Images/testi-1.png" alt="Emily Davis" class="testimonial-img" />
                 <p class="testimonial-content">
                   "Working with Dhruv was an absolute pleasure! His designs
                   were modern, clean, and highly responsive. I couldn’t be
                   happier with the website he built for my business."
                 </p>
-                <div class="testimonial-author">John Doe</div>
+                <div class="testimonial-author">Emily Davis</div>
                 <div class="testimonial-role">CEO, Startup Inc.</div>
               </div>
               <div class="testimonial-card col-md-5">
@@ -472,13 +469,13 @@
                 <div class="testimonial-role">Freelance Consultant</div>
               </div>
               <div class="testimonial-card col-md-5">
-                <img src="Images/testi-4.jpg" alt="Emily Davis" class="testimonial-img" />
+                <img src="Images/testi-4.jpg" alt="John Doe" class="testimonial-img" />
                 <p class="testimonial-content">
                   "Dhruv’s coding skills are exceptional! He delivered the
                   project on time and exceeded my expectations with his
                   innovative solutions."
                 </p>
-                <div class="testimonial-author">Emily Davis</div>
+                <div class="testimonial-author">John Doe</div>
                 <div class="testimonial-role">Marketing Specialist</div>
               </div>
             </div>
@@ -494,10 +491,12 @@
     <div class="decorative-circle small"></div>
     <h1>GET UPDATE FROM ANYWHERE</h1>
     <p>Bearing Void gathering light light his evening unto don't afraid.</p>
-    <div class="d-flex justify-content-center align-items-center flex-wrap">
-      <input type="email" class="form-control me-2" placeholder="Email address" />
-      <button class="btn btn-light">GET STARTED</button>
-    </div>
+    <form action="">
+      <div class="d-flex justify-content-center align-items-center flex-wrap">
+        <input type="email" class="form-control me-2 no-border" placeholder="Email address" required>
+        <button class="btn btn-light">GET STARTED</button>
+      </div>
+    </form>
     <div class="icon">
       <i class="bi bi-lightbulb"></i>
     </div>
@@ -520,10 +519,13 @@
       <p>
         Copyright &copy;2025 All rights reserved | This template is made with
         <span style="color: #e25555">&hearts;</span> by
-        <a href="https://colorlib.com" target="_blank">Dhruv</a>
+        <a href="Index.html" target="_blank">Dhruv</a>
       </p>
     </div>
   </footer>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <!-- Custom JavaScript -->
   <script src="script.js"></script>

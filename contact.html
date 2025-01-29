@@ -27,31 +27,32 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="Index.html">DHRUV</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <i class="fa-solid fa-bars fa-2xl" id="menu-icon"></i>
           <i class="fa-solid fa-xmark fa-2xl d-none" id="close-icon"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="Index.html" class="nav-link" onclick="setActive(this)">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link" onclick="setActive(this)">About</a></li>
             <li class="nav-item">
-              <a class="nav-link active" onclick="setActive(0)" href="Index.html">Home</a>
+              <a href="service.html" class="nav-link" onclick="setActive(this)">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="setActive(1)" href="about.html">About</a>
+              <a href="Portfolio.html" class="nav-link" onclick="setActive(this)">Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(2)" href="service.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(3)" href="Portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" onclick="setActive(4)" href="#">Pages</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="setActive(5)" href="#">Blogs</a></li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(6)" href="contact.html">Contact</a>
-            </li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="setActive(this)">Pages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="setActive(this)">Blogs</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link active" onclick="setActive(this)">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -197,6 +198,9 @@
       </p>
     </div>
   </footer>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <script src="script.js"></script>
 </body>

@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
 }
 
+/************************************************************** HEADER-NAVIGATION *********************************************************************/
 /* Fixed header positioning */
 header {
   position: fixed;
@@ -154,7 +155,7 @@ header {
   left: 0;
 }
 
-/* Header styling */
+/********************************************************** Section-1 styling ********************************************************/
 .header {
   display: flex;
   align-items: center;
@@ -213,6 +214,10 @@ header {
   margin-bottom: 20px;
 }
 
+.header-buttons{
+  display: flex;
+  gap: 10px;
+}
 /* Button styling for header */
 .header-buttons button {
   height: 50px;
@@ -224,6 +229,7 @@ header {
 .btn-primary {
   background: linear-gradient(136deg, #574ff9, #8a63ff);
   border: none;
+  height: 50px;
   font-weight: 600;
 }
 
@@ -297,13 +303,28 @@ header {
   object-fit: contain;
 }
 
-/* Section 2 header styling */
+/*************************************************************** Section 2 styling *****************************************************************/
 .sec-2 h1 {
   font-size: 40px;
   font-weight: 700;
 }
-
-/* Section 3 logo styling */
+#about-buttons button{
+  background: linear-gradient(136deg, #574ff9, #8a63ff);
+  border: none;
+  height: 50px;
+  width: 250px;
+  color: white;
+  font-weight: 600;
+}
+#about-buttons button:hover{
+  background: linear-gradient(136deg, #f6f6f8, #fefdff);
+  border: none;
+  height: 50px;
+  width: 250px;
+  color: rgb(8, 8, 8);
+  font-weight: 600;
+}
+/************************************************************************* Section 3 logo styling **************************************************/
 .logos div {
   width: 30%;
   height: 100px;
@@ -379,11 +400,13 @@ header {
   font-size: 50px;
 }
 
-/* Section 4 card styling */
+/********************************************************************* Section 4 card styling *************************************************************/
 .sec-4 {
   padding: 100px 0;
 }
-
+.service-para{
+  width: 50%;
+}
 .card {
   border: none;
   background-color: #fff;
@@ -422,12 +445,14 @@ header {
   justify-content: center;
   gap: 20px;
 }
-
-/* Section 5 project image hover styling */
+*
+/********************************************************** Section 5 project image hover styling ***********************************************/
 .sec-5 {
   padding: 200px 0;
 }
-
+.row{
+  margin: 0px ;
+}
 #filter-buttons button {
   background-color: #682ddd;
   color: whitesmoke;
@@ -482,7 +507,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:#512be7ba;
+  background-color: #512be7ba;
   color: #fff;
   display: flex;
   align-items: center;
@@ -498,7 +523,7 @@ header {
   opacity: 1;
 }
 
-/* Section 6 testimonial card styling */
+/******************************************************* Section 6 testimonial card styling ********************************************************/
 .sec-6 {
   padding-top: 100px;
 }
@@ -526,7 +551,7 @@ header {
 .testimonial-content {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: #262525;
   margin-bottom: 15px;
 }
 
@@ -538,10 +563,10 @@ header {
 
 .testimonial-role {
   font-size: 0.9rem;
-  color: #777;
+  color: #1e1919;
 }
 
-/* Section 7 purple section styling */
+/************************************************* Section 7 purple section styling ***************************************************/
 .purple-section {
   background: linear-gradient(135deg, #6a0dad, #8e44ad);
   color: white;
@@ -604,8 +629,11 @@ header {
   height: 30px;
   margin: 20px auto;
 }
-
-/* Section 8 footer styling */
+.no-border:focus {
+  border-color: none;
+  outline: none;
+}
+/************************************************************* Section 8 footer styling ********************************************************/
 .footer {
   background-color: #f8f9fa;
   text-align: center;
@@ -723,4 +751,29 @@ header {
   justify-content: center;
   font-size: 1.2rem;
   color: #666;
+}
+
+/********************************************************************* back to top button ***************************************************/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: #3d18cf;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 70px;
+  border: 1px solid #4a00e0;
+  transition-duration: .4s;
+}
+
+#myBtn:hover {
+  background-color: white;
+  color: #3d18cf;
+  border: 1px solid #433aed;
 }

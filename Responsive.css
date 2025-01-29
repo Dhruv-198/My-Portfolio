@@ -1,4 +1,15 @@
+@media (max-width: 300px) {
+
+  /* back to top button */
+  /* #myBtn {
+    bottom: 5px;
+    right: 150px;
+    padding: 10px;
+    width: 60px;
+  } */
+}
 @media (max-width: 480px) {
+
   /* Adjustments for small screen sizes */
   .purple-section h1 {
     font-size: 1.25rem;
@@ -28,7 +39,20 @@
 }
 
 @media (max-width: 768px) {
-  /* Adjustments for medium-sized screens like tablets */
+
+  .header-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /************************** About section-2 font size adjustment ***********************/
+  .about-box h1 {
+    font-size: 2rem;
+  }
+ 
+
+  /************** Section-3 Adjustments for medium-sized screens like tablets *************/
   .logos div {
     flex: 0 0 100%;
   }
@@ -44,27 +68,32 @@
   .info-box p {
     font-size: 0.9rem;
   }
+  #para {
+    padding-left: 60px;
+  }
 
-  /* Service section adjustment for better mobile view */
+  /************ Service section-4 adjustment for better mobile view *************/
   .service-section {
     flex-direction: column;
     align-items: center;
   }
-
-  /* Center filter buttons */
+  .service-para{
+    width: 100%;
+  }
+  /********************* Section-5 Center filter buttons ************************/
   #filter-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .col-12 h1,h2 {
+  .col-12 h1,
+  h2 {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
-  /* Testimonial section styling */
+  /************************** Testimonial section-6 styling ************************/
   .testimonial-row {
     flex-direction: row;
     justify-content: space-between;
@@ -96,7 +125,7 @@
     font-size: 0.8rem;
   }
 
-  /* Purple section adjustments */
+  /***************************** Purple section-7 adjustments ****************************/
   .purple-section {
     height: auto;
     padding: 20px;
@@ -131,13 +160,17 @@
     height: 12px;
   }
 
-  /* About section font size adjustment */
-  .about-box h1 {
-    font-size: 2rem;
+  /* back to top button */
+  #myBtn {
+    bottom: 5px;
+    right: 20px;
+    padding: 10px;
+    width: 60px;
   }
 }
 
 @media (max-width: 992px) {
+
   /* Navbar styling for medium-sized screens */
   .navbar-toggler:focus {
     outline: none;
@@ -183,6 +216,9 @@
   .header-text h3::after {
     display: none;
   }
+  #para {
+    font-size: 20px;
+  }
 
   /* Section 2 adjustments for smaller screens */
   .sec-2 {
@@ -204,6 +240,7 @@
 }
 
 @media (max-width: 1200px) {
+
   /* Header text adjustments for large screens */
   .header-text h3::after {
     width: 200px;
@@ -220,6 +257,7 @@
 }
 
 @media (max-width: 1400px) {
+
   /* Header text adjustments for extra-large screens */
   .header-text h3::after {
     width: 300px;

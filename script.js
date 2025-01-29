@@ -37,15 +37,27 @@ function toggleMenu() {
 }
 
 // Header-Portion
-function setActive(index) {
+function setActive(link) {
   var navLinks = document.getElementsByClassName("nav-link");
-
-  // Remove 'active' class from all links
-  for (var j = 0; j < navLinks.length; j++) {
-    navLinks[j].className = navLinks[j].className.replace("active", "");
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].classList.remove("active");
   }
-
-  // Add 'active' class to the clicked link
-  navLinks[index].className += " active";
+  link.classList.add("active");
 }
 
+// Get the button
+var mybutton = document.getElementById("myBtn");
+
+// Show button when scrolling down 20px, hide it otherwise
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+};
+
+// Scroll to the top when the button is clicked
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}

@@ -27,31 +27,32 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="Index.html">DHRUV</a>
-        <!-- Navbar toggler for mobile view -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <i class="fa-solid fa-bars fa-2xl" id="menu-icon"></i>
           <i class="fa-solid fa-xmark fa-2xl d-none" id="close-icon"></i>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="Index.html" class="nav-link" onclick="setActive(this)">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link" onclick="setActive(this)">About</a></li>
             <li class="nav-item">
-              <a class="nav-link active" onclick="setActive(0)" href="Index.html">Home</a>
+              <a href="service.html" class="nav-link" onclick="setActive(this)">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="setActive(1)" href="about.html">About</a>
+              <a href="Portfolio.html" class="nav-link active" onclick="setActive(this)">Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(2)" href="service.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(3)" href="Portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" onclick="setActive(4)" href="#">Pages</a></li>
-            <li class="nav-item"><a class="nav-link" onclick="setActive(5)" href="#">Blogs</a></li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="setActive(6)" href="contact.html">Contact</a>
-            </li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="setActive(this)">Pages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="setActive(this)">Blogs</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link" onclick="setActive(this)">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -135,7 +136,9 @@
           <a href="#" target="_blank">
             <img src="Images/Admin-Panel.png" alt="Creative Branding" class="img-fluid rounded" />
           </a>
-          <div class="overlay">+</div>
+          <a href="https://github.com/Dhruv-198/Admin-Panel.git" target="_blank">
+            <div class="overlay">+</div>
+          </a>
         </div>
         <h3 class="text-black text-center mt-3 mb-0">ADMIN PANEL</h3>
       </div>
@@ -166,10 +169,10 @@
       </div>
       <div class="col-md-4 mt-5 project bootstrap" data-id="7">
         <div class="project-container image-wrapper">
-          <a href="#" target="_blank">
-            <img src="Images/Reliance.png" alt="Reliance" class="img-fluid rounded" />
+          <img src="Images/Reliance.png" alt="Reliance" class="img-fluid rounded" />
+          <a href="https://github.com/Dhruv-198/Reliance-Clone.git" target="_blank">
+            <div class="overlay">+</div>
           </a>
-          <div class="overlay">+</div>
         </div>
         <h3 class="text-black text-center mt-3 mb-0">
           RELIANCE-FOUNDATION-CLONE
@@ -191,7 +194,7 @@
 
           <img src="Images/Gread_Sys.png" alt="Looper Tech" class="img-fluid rounded" />
 
-          <a href="https://register-login-ochre.vercel.app/" target="_blank">
+          <a href="https://github.com/Dhruv-198/Gread-System.git" target="_blank">
             <div class="overlay">+</div>
           </a>
         </div>
@@ -300,6 +303,9 @@
           style="color: #e25555">&hearts;</span> by <a href="https://colorlib.com" target="_blank">Dhruv</a></p>
     </div>
   </footer>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
   <!-- Custom JavaScript -->
   <script src="script.js"></script>

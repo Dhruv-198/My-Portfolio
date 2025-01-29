@@ -1,330 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Responsive.css" />
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" />
 
-  <body>
-    <!---------------------------------------------- Navigation  ------------------------------------------------>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="Index.html">DHRUV</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-bars fa-2xl" id="menu-icon"></i>
-            <i class="fa-solid fa-xmark fa-2xl d-none" id="close-icon"></i>
-          </button>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Responsive.css" />
+</head>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" onclick="setActive(0)" href="Index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="setActive(1)" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="setActive(2)" href="service.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="setActive(3)" href="Portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" onclick="setActive(4)" href="#">Pages</a></li>
-              <li class="nav-item"><a class="nav-link" onclick="setActive(5)" href="#">Blogs</a></li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="setActive(6)" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!---------------------------------------------- Section-1  ------------------------------------------------>
-    <div class="container about-section d-flex justify-content-center align-items-center mt-5">
-        <div class="container text-center">
-          <div class="about-box">
-            <h1>ABOUT US</h1>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb justify-content-center mt-4">
-                <li class="breadcrumb-item fs-5"><a href="Index.html">Home</a> </li>
-                <li class="breadcrumb-item active fs-5" aria-current="page">About</li>
-              </ol>
-            </nav>
-          </div>
+<body>
+  <!---------------------------------------------- Navigation  ------------------------------------------------>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="Index.html">DHRUV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-2xl" id="menu-icon"></i>
+          <i class="fa-solid fa-xmark fa-2xl d-none" id="close-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="Index.html" class="nav-link" onclick="setActive(this)">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link active" onclick="setActive(this)">About</a></li>
+            <li class="nav-item">
+              <a href="service.html" class="nav-link" onclick="setActive(this)">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="Portfolio.html" class="nav-link" onclick="setActive(this)">Portfolio</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="setActive(this)">Pages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" onclick="setActive(this)">Blogs</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link" onclick="setActive(this)">Contact</a></li>
+          </ul>
         </div>
       </div>
+    </nav>
+  </header>
+  <!---------------------------------------------- Section-1  ------------------------------------------------>
+  <div class="container about-section d-flex justify-content-center align-items-center mt-5">
+    <div class="container text-center">
+      <div class="about-box">
+        <h1>ABOUT US</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center mt-4">
+            <li class="breadcrumb-item fs-5"><a href="Index.html">Home</a> </li>
+            <li class="breadcrumb-item active fs-5" aria-current="page">About</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
 
-    <!---------------------------------------------- Section-2 ------------------------------------------------>
-    <section class="container-fluid header mt-5 sec-2">
-      <div
-        class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between"
-      >
-        <div class="header-image">
-          <img src="Images/about-us.png.webp" alt="Illustration" />
-        </div>
-        <div class="header-text ps-5">
+  <!---------------------------------------------- Section-2 ------------------------------------------------>
+  <section class="container-fluid header mt-5 sec-2">
+    <div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-center">
+      <div class="header-image">
+        <img src="Images/about-us.png.webp" alt="Illustration" />
+      </div>
+      <div class="header-text ps-5">
+        <div class="ps-5">
           <h1>let’s</h1>
           <h1>Introduce about</h1>
           <h1>myself</h1>
-
-          <p class="w-75 mt-3">
-            Whose given. Were gathered. There first subdue greater. Bearing you
-            Whales heaven midst their. Beast creepeth. Fish days.
-          </p>
-          <p class="mt-3 w-75">
-            Is give may shall likeness made yielding spirit a itself together
-            created after sea is in beast beginning signs open god you're
-            gathering whose gathered cattle let. Creature whales fruit unto meat
-            the life beginning all in under give two.
-          </p>
-          <div class="header-buttons">
-            <button class="btn btn-primary text-uppercase w-50"> <a href="Dhruv_Patel_Resume (1).pdf" target="_blank">Download Resume</a></button>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <!---------------------------------------------- Section-3 ------------------------------------------------>
-
-    <div class="container sec-3">
-      <div class="row d-flex justify-content-evenly align-items-center">
-        <div class="col-lg-8 col-12">
-          <div
-            class="row logos g-3 d-flex justify-content-evenly align-items-center"
-          >
-            <div class="col-4">
-              <img src="Images/logo1.png.webp" alt="Travel Logo" />
-            </div>
-            <div class="col-4">
-              <img src="Images/logo2.png.webp" alt="Organic Logo" />
-            </div>
-            <div class="col-4">
-              <img src="Images/logo3.png.webp" alt="Iconic Logo" />
-            </div>
-            <div class="col-4">
-              <img src="Images/logo4.png.webp" alt="Microw Logo" />
-            </div>
-            <div class="col-4">
-              <img src="Images/logo5.png.webp" alt="Hipster Logo" />
-            </div>
-            <div class="col-4">
-              <img src="Images/logo6.png.webp" alt="Alisa Logo" />
-            </div>
-            <div class="col-4">
-              <img src="Images/logo7.png.webp" alt="Iconic Logo" />
-            </div>
-            <div class="col-4">
-              <img src="Images/logo8.png.webp" alt="Natural Logo" />
-            </div>
-            <div class="col-4">
-              <img src="Images/logo9.png.webp" alt="New Logo" />
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-12 mt-4 mt-lg-0 ps-xl-5 ps-lg-5 ps-md-0 ps-sm-0"
-        >
-          <div
-            class="info-box d-flex justify-content-evenly align-items-start flex-column"
-          >
-            <div class="d-flex align-items-center">
-              <h1>10</h1>
-              <p class="w-25 text-start ps-5 fs-3 fw-bold">
-                Years Experience Working
-              </p>
-            </div>
-            <div class="phone">
-              <div class="phone-icon">
-                <span class="phone-icon">&#9742;</span>
-              </div>
-              <div class="ps-5">
-                <div>
-                  <p style="color: #6f42c1" class="fw-bold">CALL US NOW</p>
-                </div>
-                <div><a href="tel:+18005556789">(+1)-800-555-6789</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!---------------------------------------------- Section-6 ------------------------------------------------>
-    <div class="container sec-4">
-      <h1 class="d-flex justify-content-center mb-5 text-black fw-bold">
-        CLIENT SAY ABOUT ME
-      </h1>
-      <div
-        class="w-100 d-flex justify-content-center align-items-center text-center"
-      >
-        <p class="w-50 fs-5">
-          Is give may shall likeness made yielding spirit a itself togeth
-          created after sea is in beast beginning signs open god you're
-          gathering ithe
+        <p class=" mt-3 fs-5 w-75 ps-5">
+          I am a passionate <span class="fw-bold"> Front-End Developer </span> skilled in <span class="fw-bold"> HTML,
+            CSS, jQuery, Bootstrap, DSA With C++ and JavaScript,</span> focused on building responsive and user-friendly
+          websites. With a keen eye for design, I create visually appealing and high-performance interfaces.
         </p>
+        <p class="mt-3 fs-5 w-75 ps-5">
+          I follow best UI practices to ensure seamless user experiences. Staying updated with the latest web
+          technologies, I optimize code for performance and accessibility. I collaborate closely with designers and
+          back-end developers to deliver efficient solutions. Clean coding and problem-solving are at the core of my
+          approach, aiming to build innovative and engaging web experiences.
+        </p>
+        <div id="about-buttons" class="mt-4 ps-5">
+          <a href="Dhruv_Patel_Resume (1).pdf" target="_blank"><button class="btn  text-uppercase w-50">
+              Download Resume</button>
+          </a>
+        </div>
       </div>
-      <div class="container sec-6 pb-5">
-        <div
-          id="testimonialCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <!-- Slides -->
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="d-flex testimonial-row justify-content-center gap-4">
-                <div class="testimonial-card col-md-5">
-                  <img
-                    src="Images/testi-1.png"
-                    alt="John Doe"
-                    class="testimonial-img"
-                  />
-                  <p class="testimonial-content">
-                    "Working with Dhruv was an absolute pleasure! His designs
-                    were modern, clean, and highly responsive. I couldn’t be
-                    happier with the website he built for my business."
-                  </p>
-                  <div class="testimonial-author">John Doe</div>
-                  <div class="testimonial-role">CEO, Startup Inc.</div>
-                </div>
-                <div class="testimonial-card col-md-5">
-                  <img
-                    src="Images/testi-2.webp"
-                    alt="Jane Smith"
-                    class="testimonial-img"
-                  />
-                  <p class="testimonial-content">
-                    "Dhruv transformed our outdated website into a stunning,
-                    user-friendly platform. His attention to detail and
-                    commitment to quality are unmatched!"
-                  </p>
-                  <div class="testimonial-author">Jane Smith</div>
-                  <div class="testimonial-role">Product Manager, TechWorld</div>
-                </div>
+    </div>
+  </section>
+
+  <!---------------------------------------------- Section-3 ------------------------------------------------>
+
+  <div class="container sec-3">
+    <div class="row d-flex justify-content-evenly align-items-center">
+      <div class="col-lg-8 col-12">
+        <div class="row logos g-3 d-flex justify-content-evenly align-items-center">
+          <div class="col-4">
+            <img src="Images/logo1.png.webp" alt="Travel Logo" />
+          </div>
+          <div class="col-4">
+            <img src="Images/logo2.png.webp" alt="Organic Logo" />
+          </div>
+          <div class="col-4">
+            <img src="Images/logo3.png.webp" alt="Iconic Logo" />
+          </div>
+          <div class="col-4">
+            <img src="Images/logo4.png.webp" alt="Microw Logo" />
+          </div>
+          <div class="col-4">
+            <img src="Images/logo5.png.webp" alt="Hipster Logo" />
+          </div>
+          <div class="col-4">
+            <img src="Images/logo6.png.webp" alt="Alisa Logo" />
+          </div>
+          <div class="col-4">
+            <img src="Images/logo7.png.webp" alt="Iconic Logo" />
+          </div>
+          <div class="col-4">
+            <img src="Images/logo8.png.webp" alt="Natural Logo" />
+          </div>
+          <div class="col-4">
+            <img src="Images/logo9.png.webp" alt="New Logo" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 mt-4 mt-lg-0 ps-xl-5 ps-lg-5 ps-md-0 ps-sm-0">
+        <div class="info-box d-flex justify-content-evenly align-items-start flex-column">
+          <div class="d-flex align-items-center">
+            <h1>1</h1>
+            <p class="w-25 text-start ps-5 fs-3 fw-bold">
+              Years Experience Working
+            </p>
+          </div>
+          <div class="phone">
+            <div class="phone-icon">
+              <span class="phone-icon">&#9742;</span>
+            </div>
+            <div class="ps-5">
+              <div>
+                <p style="color: #6f42c1" class="fw-bold">CALL US NOW</p>
+              </div>
+              <div><a href="tel:+18005556789">(+1)-800-555-6789</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------- Section-6 ------------------------------------------------>
+  <div class="container sec-4">
+    <h1 class="d-flex justify-content-center mb-5 text-black fw-bold">
+      CLIENT SAY ABOUT ME
+    </h1>
+    <div class="w-100 d-flex justify-content-center align-items-center text-center">
+      <p class="w-50 fs-5">
+        Clients have praised my dedication to delivering high-quality, user-centric web solutions. They appreciate my
+        attention to detail and ability to bring their visions to life.
+      </p>
+    </div>
+    <div class="container sec-6 pb-5">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex testimonial-row justify-content-center gap-4">
+              <div class="testimonial-card col-md-5">
+                <img src="Images/testi-1.png" alt="John Doe" class="testimonial-img" />
+                <p class="testimonial-content">
+                  "Working with Dhruv was an absolute pleasure! His designs
+                  were modern, clean, and highly responsive. I couldn’t be
+                  happier with the website he built for my business."
+                </p>
+                <div class="testimonial-author">John Doe</div>
+                <div class="testimonial-role">CEO, Startup Inc.</div>
+              </div>
+              <div class="testimonial-card col-md-5">
+                <img src="Images/testi-2.webp" alt="Jane Smith" class="testimonial-img" />
+                <p class="testimonial-content">
+                  "Dhruv transformed our outdated website into a stunning,
+                  user-friendly platform. His attention to detail and
+                  commitment to quality are unmatched!"
+                </p>
+                <div class="testimonial-author">Jane Smith</div>
+                <div class="testimonial-role">Product Manager, TechWorld</div>
               </div>
             </div>
+          </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="d-flex testimonial-row justify-content-center gap-4">
-                <div class="testimonial-card col-md-5">
-                  <img
-                    src="Images/testi-3.jpg"
-                    alt="Alex Johnson"
-                    class="testimonial-img"
-                  />
-                  <p class="testimonial-content">
-                    "The level of creativity and professionalism Dhruv brings to
-                    every project is phenomenal. I highly recommend him for any
-                    front-end development needs!"
-                  </p>
-                  <div class="testimonial-author">Alex Johnson</div>
-                  <div class="testimonial-role">Freelance Consultant</div>
-                </div>
-                <div class="testimonial-card col-md-5">
-                  <img
-                    src="Images/testi-4.jpg"
-                    alt="Emily Davis"
-                    class="testimonial-img"
-                  />
-                  <p class="testimonial-content">
-                    "Dhruv’s coding skills are exceptional! He delivered the
-                    project on time and exceeded my expectations with his
-                    innovative solutions."
-                  </p>
-                  <div class="testimonial-author">Emily Davis</div>
-                  <div class="testimonial-role">Marketing Specialist</div>
-                </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex testimonial-row justify-content-center gap-4">
+              <div class="testimonial-card col-md-5">
+                <img src="Images/testi-3.jpg" alt="Alex Johnson" class="testimonial-img" />
+                <p class="testimonial-content">
+                  "The level of creativity and professionalism Dhruv brings to
+                  every project is phenomenal. I highly recommend him for any
+                  front-end development needs!"
+                </p>
+                <div class="testimonial-author">Alex Johnson</div>
+                <div class="testimonial-role">Freelance Consultant</div>
+              </div>
+              <div class="testimonial-card col-md-5">
+                <img src="Images/testi-4.jpg" alt="Emily Davis" class="testimonial-img" />
+                <p class="testimonial-content">
+                  "Dhruv’s coding skills are exceptional! He delivered the
+                  project on time and exceeded my expectations with his
+                  innovative solutions."
+                </p>
+                <div class="testimonial-author">Emily Davis</div>
+                <div class="testimonial-role">Marketing Specialist</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!---------------------------------------------- Section-7 ------------------------------------------------>
-    <div class="container purple-section sec-6 pb-5">
-      <div class="decorative-circle large"></div>
-      <div class="decorative-circle small"></div>
-      <h1>GET UPDATE FROM ANYWHERE</h1>
-      <p>Bearing Void gathering light light his evening unto don't afraid.</p>
-      <div class="d-flex justify-content-center align-items-center">
-        <input
-          type="email"
-          class="form-control me-2"
-          placeholder="Email address"
-        />
-        <button class="btn btn-light">GET STARTED</button>
-      </div>
-      <div class="icon">
-        <i class="bi bi-lightbulb"></i>
-      </div>
+  <!---------------------------------------------- Section-7 ------------------------------------------------>
+  <div class="container purple-section sec-6 pb-5">
+    <div class="decorative-circle large"></div>
+    <div class="decorative-circle small"></div>
+    <h1>GET UPDATE FROM ANYWHERE</h1>
+    <p>Bearing Void gathering light light his evening unto don't afraid.</p>
+    <div class="d-flex justify-content-center align-items-center">
+      <input type="email" class="form-control me-2" placeholder="Email address" />
+      <button class="btn btn-light">GET STARTED</button>
     </div>
+    <div class="icon">
+      <i class="bi bi-lightbulb"></i>
+    </div>
+  </div>
 
-    <!---------------------------------------------- Section-8 ------------------------------------------------>
-    <footer
-      class="footer pb-5 pt-5 d-flex justify-content-end align-items-center flex-column"
-    >
-      <a class="navbar-brand" href="Index.html">DHRUV</a>
-      <p class="mt-4 fs-5 text-black fw-bold">FOLLOW ME</p>
-      <div class="social-icons d-flex justify-content-center mt-4">
-        <a href="https://www.facebook.com/" class="mx-2" aria-label="Facebook"
-          ><i class="fa-brands fa-facebook-f"></i
-        ></a>
-        <a href="https://www.instagram.com/" class="mx-2" aria-label="Instagram"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://github.com/Dhruv-198" class="mx-2" aria-label="Github"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/patel-dhruv-7a23b3216/" class="mx-2" aria-label="LinkedIn"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </div>
-      <div class="copyright mt-4">
-        <p>
-          Copyright &copy;2025 All rights reserved | This template is made with
-          <span style="color: #e25555">&hearts;</span> by
-          <a href="https://colorlib.com" target="_blank">Dhruv</a>
-        </p>
-      </div>
-    </footer>
+  <!---------------------------------------------- Section-8 ------------------------------------------------>
+  <footer class="footer pb-5 pt-5 d-flex justify-content-end align-items-center flex-column">
+    <a class="navbar-brand" href="Index.html">DHRUV</a>
+    <p class="mt-4 fs-5 text-black fw-bold">FOLLOW ME</p>
+    <div class="social-icons d-flex justify-content-center mt-4">
+      <a href="https://www.facebook.com/" class="mx-2" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/" class="mx-2" aria-label="Instagram"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/Dhruv-198" class="mx-2" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/patel-dhruv-7a23b3216/" class="mx-2" aria-label="LinkedIn"><i
+          class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="copyright mt-4">
+      <p>
+        Copyright &copy;2025 All rights reserved | This template is made with
+        <span style="color: #e25555">&hearts;</span> by
+        <a href="https://colorlib.com" target="_blank">Dhruv</a>
+      </p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Scroll to Top Button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
