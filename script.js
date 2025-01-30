@@ -22,19 +22,20 @@ window.onload = function () {
 
 // Navbar toggler logic
 function toggleMenu() {
-  const menuIcon = document.getElementById("menu-icon");
-  const closeIcon = document.getElementById("close-icon");
-  
-  // Toggle visibility of icons
-  if (menuIcon.style.display === "none") {
-    menuIcon.style.display = "block";
-    closeIcon.style.display = "none";
-  } 
-  else {
-    menuIcon.style.display = "none";
-    closeIcon.style.display = "block";
-  }
+  let menuIcon = document.getElementById("menu-icon");
+  let closeIcon = document.getElementById("close-icon");
+  let navbarToggler = document.querySelector(".navbar-toggler");
+
+  // Use setTimeout to wait for Bootstrap to toggle the menu
+  setTimeout(() => {
+    let isOpen = navbarToggler.classList.contains("collapsed"); // Bootstrap adds 'collapsed' when menu is closed
+
+    // Toggle icons based on navbar state
+    menuIcon.classList.toggle("d-none", !isOpen);
+    closeIcon.classList.toggle("d-none", isOpen);
+  }, 10); // Small delay to let Bootstrap update the state
 }
+
 
 // Header-Portion
 function setActive(link) {
