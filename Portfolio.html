@@ -27,25 +27,18 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="Index.html">DHRUV</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
           <i class="fa-solid fa-bars fa-2xl" id="menu-icon"></i>
           <i class="fa-solid fa-xmark fa-2xl d-none" id="close-icon"></i>
         </button>
-
+  
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a href="Index.html" class="nav-link" onclick="setActive(this)">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link" onclick="setActive(this)">About</a></li>
             <li class="nav-item">
-              <a href="service.html" class="nav-link" onclick="setActive(this)">Services</a>
+              <a href="service.html" class="nav-link " onclick="setActive(this)">Services</a>
             </li>
             <li class="nav-item">
               <a href="Portfolio.html" class="nav-link active" onclick="setActive(this)">Portfolio</a>
